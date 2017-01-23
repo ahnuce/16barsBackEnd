@@ -1,5 +1,5 @@
-var mongoose = require('./connection.js')
-var seedData = require('./seeds.js')
+var mongoose = require('./connection.js');
+var seedData = require('./seeds.js');
 
 var Poem = mongoose.model('Poem');
 
