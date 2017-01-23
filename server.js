@@ -1,5 +1,7 @@
 var express = require('express');
 var app = express();
+var mongoose = require('./db/connection');
+var Poem = mongoose.model('Poem');
 
 app.listen(3000, function(){
   console.log("I'm Aliveee");
@@ -7,7 +9,10 @@ app.listen(3000, function(){
 
 //Root
 app.get("/api/", function(req,res){
-  res.send("Root/Index");
+  Poem.find()
+  .then((poems) =>{
+    res.send(poems)
+  })
 });
 //wildcard
 app.get("/api/:id", function(req,res){
