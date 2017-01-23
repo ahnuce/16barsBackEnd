@@ -9,7 +9,15 @@ var PoemSchema = new mongoose.Schema(
       body: String,
 
 
+
 });
 
 mongoose.model('Poem', PoemSchema);
 mongoose.connect('url');
+
+module.exports = mongoose
+// var seedData = require("./seed.json")
+// module.exports = {
+//   poems: seedData
+// }
+
