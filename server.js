@@ -7,14 +7,20 @@ app.listen(3000, function(){
   console.log("I'm Aliveee");
 });
 
-//Root
-app.get("/api/", function(req,res){
-  Poem.find()
-  .then((poems) =>{
+//Root/index/all Poems
+app.get("/api/poems/", function(req,res){
+Poem.find({})
+  .then(function(poems){
     res.send(poems)
-  })
+  });
 });
-//wildcard
-app.get("/api/:id", function(req,res){
+//New
+app.post("/api/poems/", function(req,res){
+  Poem.create(req.body.poem).then(function(poem){
+    res.redirect("/poem/" + poem._id);
+  });
+});
+//Show
+app.get("/api/poems/:id", function(req,res){
   res.send(req.params.id);
 });
