@@ -7,17 +7,13 @@ var PoemSchema = new mongoose.Schema(
   {
       title: String,
       body: String,
-
-
-
 });
 
 mongoose.model('Poem', PoemSchema);
-mongoose.connect('url');
+mongoose.connect("mongodb://localhost/poemDb");
 
 module.exports = mongoose
 // var seedData = require("./seed.json")
 // module.exports = {
 //   poems: seedData
 // }
-
