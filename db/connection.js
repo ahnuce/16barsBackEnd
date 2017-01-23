@@ -11,7 +11,7 @@ var PoemSchema = new mongoose.Schema(
 
 })
 mongoose.model('Poem', PoemSchema)
-mongoose.connect('url');
+mongoose.connect(url);
 
 
 module.exports = mongoose
