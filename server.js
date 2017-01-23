@@ -5,6 +5,11 @@ app.listen(3000, function(){
   console.log("I'm Aliveee");
 });
 
-app.get("/", function(req,res){
-  res.send("Hello");
+//Root
+app.get("/api/", function(req,res){
+  res.send("Root/Index");
+});
+//wildcard
+app.get("/api/:id", function(req,res){
+  res.send(req.params.id);
 });
