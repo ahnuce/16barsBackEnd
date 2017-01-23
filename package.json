@@ -1,0 +1,28 @@
+{
+  "name": "16barsBackEnd",
+  "version": "1.0.0",
+  "description": "Project 3",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahnuce/16barsBackEnd.git"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahnuce/16barsBackEnd/issues"
+  },
+  "homepage": "https://github.com/ahnuce/16barsBackEnd#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+     "mongodb": "^2.2.21",
+    "mongoose": "^4.7.7",
+    "url": "https://github.com/ahnuce/16bars/issues"
+  },
+}
