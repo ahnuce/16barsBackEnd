@@ -1,6 +1,7 @@
 var mongoose = require("mongoose");
 var mongo = require("mongodb").MongoClient;
 var url = "mongodb://localhost:3000/poemDb";
+mongoose.Promise = global.Promise;
 
 
 var PoemSchema = new mongoose.Schema(

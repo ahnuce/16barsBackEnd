@@ -4,17 +4,24 @@ var mongoose = require('./db/connection');
 var Poem = mongoose.model('Poem');
 
 app.listen(3000, function(){
-  console.log("I'm Aliveee");
+ console.log("I'm Aliveee");
 });
 
-//Root
-app.get("/api/", function(req,res){
-  Poem.find()
-  .then((poems) =>{
-    res.send(poems)
-  })
+//Root/index/all Poems
+app.get("/api/poems/", function(req,res){
+ res.send(Poem.find({})
+ .then(function(poems){
+   res.send(poems.title)
+ })
+);
 });
-//wildcard
-app.get("/api/:id", function(req,res){
-  res.send(req.params.id);
+//New
+app.post("/api/poems/", function(req,res){
+ Poem.create(req.body.poem).then(function(poem){
+   res.redirect("/poem/" + poem._id);
+ });
+});
+//Show
+app.get("/api/poems/:id", function(req,res){
+ res.send(req.params.id);
 });
