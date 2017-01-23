@@ -12,4 +12,4 @@ app.get("/api/", function(req,res){
 //wildcard
 app.get("/api/:id", function(req,res){
   res.send(req.params.id);
-};
+});
