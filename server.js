@@ -6,7 +6,6 @@ var Poem = mongoose.model('Poem');
 app.listen(3000, function(){
   console.log("I'm Aliveee");
 });
-
 //Root/index/all Poems
 app.get("/api/poems/", function(req,res){
 Poem.find({})

@@ -1,0 +1,113 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/7.4.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@4.0.5
+3 info using node@v7.4.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchOtherPackageData url@https://github.com/ahnuce/16bars/issues
+20 silly cache add args [ 'url@https://github.com/ahnuce/16bars/issues', null ]
+21 verbose cache add spec url@https://github.com/ahnuce/16bars/issues
+22 silly cache add parsed spec Result {
+22 silly cache add   raw: 'url@https://github.com/ahnuce/16bars/issues',
+22 silly cache add   scope: null,
+22 silly cache add   escapedName: 'url',
+22 silly cache add   name: 'url',
+22 silly cache add   rawSpec: 'https://github.com/ahnuce/16bars/issues',
+22 silly cache add   spec: 'https://github.com/ahnuce/16bars/issues',
+22 silly cache add   type: 'remote' }
+23 silly mapToRegistry name url@https://github.com/ahnuce/16bars/issues
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'url@https://github.com/ahnuce/16bars/issues',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'url',
+26 silly mapToRegistry   name: 'url',
+26 silly mapToRegistry   rawSpec: 'https://github.com/ahnuce/16bars/issues',
+26 silly mapToRegistry   spec: 'https://github.com/ahnuce/16bars/issues',
+26 silly mapToRegistry   type: 'remote' }
+27 silly mapToRegistry uri https://github.com/ahnuce/16bars/issues
+28 verbose addRemoteTarball https://github.com/ahnuce/16bars/issues not in flight; adding
+29 verbose addRemoteTarball [ 'https://github.com/ahnuce/16bars/issues', null ]
+30 info retry fetch attempt 1 at 9:15:58 AM
+31 info attempt registry request try #1 at 9:15:58 AM
+32 http fetch GET https://github.com/ahnuce/16bars/issues
+33 verbose request id cd37636b57b65905
+34 http fetch 406 https://github.com/ahnuce/16bars/issues
+35 error fetch failed https://github.com/ahnuce/16bars/issues
+36 warn retry will retry, error on last attempt: Error: fetch failed with status code 406
+37 info retry fetch attempt 2 at 9:16:08 AM
+38 info attempt registry request try #1 at 9:16:08 AM
+39 http fetch GET https://github.com/ahnuce/16bars/issues
+40 info retry will retry, error on last attempt: Error: socket hang up
+41 info attempt registry request try #2 at 9:16:18 AM
+42 http fetch GET https://github.com/ahnuce/16bars/issues
+43 http fetch 406 https://github.com/ahnuce/16bars/issues
+44 error fetch failed https://github.com/ahnuce/16bars/issues
+45 warn retry will retry, error on last attempt: Error: fetch failed with status code 406
+46 info retry fetch attempt 3 at 9:17:19 AM
+47 info attempt registry request try #1 at 9:17:19 AM
+48 http fetch GET https://github.com/ahnuce/16bars/issues
+49 http fetch 406 https://github.com/ahnuce/16bars/issues
+50 error fetch failed https://github.com/ahnuce/16bars/issues
+51 silly fetchPackageMetaData Error: fetch failed with status code 406
+51 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/fetch.js:51:14)
+51 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+51 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+51 silly fetchPackageMetaData     at Request.onRequestResponse (/usr/local/lib/node_modules/npm/node_modules/request/request.js:986:10)
+51 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+51 silly fetchPackageMetaData     at ClientRequest.emit (events.js:188:7)
+51 silly fetchPackageMetaData     at HTTPParser.parserOnIncomingClient [as onIncoming] (_http_client.js:473:21)
+51 silly fetchPackageMetaData     at HTTPParser.parserOnHeadersComplete (_http_common.js:99:23)
+51 silly fetchPackageMetaData     at TLSSocket.socketOnData (_http_client.js:362:20)
+51 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+51 silly fetchPackageMetaData  error for url@https://github.com/ahnuce/16bars/issues Error: fetch failed with status code 406
+51 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/fetch.js:51:14)
+51 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+51 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+51 silly fetchPackageMetaData     at Request.onRequestResponse (/usr/local/lib/node_modules/npm/node_modules/request/request.js:986:10)
+51 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+51 silly fetchPackageMetaData     at ClientRequest.emit (events.js:188:7)
+51 silly fetchPackageMetaData     at HTTPParser.parserOnIncomingClient [as onIncoming] (_http_client.js:473:21)
+51 silly fetchPackageMetaData     at HTTPParser.parserOnHeadersComplete (_http_common.js:99:23)
+51 silly fetchPackageMetaData     at TLSSocket.socketOnData (_http_client.js:362:20)
+51 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+52 silly rollbackFailedOptional Starting
+53 silly rollbackFailedOptional Finishing
+54 silly runTopLevelLifecycles Finishing
+55 silly install printInstalled
+56 verbose stack Error: fetch failed with status code 406
+56 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/fetch.js:51:14)
+56 verbose stack     at emitOne (events.js:96:13)
+56 verbose stack     at Request.emit (events.js:188:7)
+56 verbose stack     at Request.onRequestResponse (/usr/local/lib/node_modules/npm/node_modules/request/request.js:986:10)
+56 verbose stack     at emitOne (events.js:96:13)
+56 verbose stack     at ClientRequest.emit (events.js:188:7)
+56 verbose stack     at HTTPParser.parserOnIncomingClient [as onIncoming] (_http_client.js:473:21)
+56 verbose stack     at HTTPParser.parserOnHeadersComplete (_http_common.js:99:23)
+56 verbose stack     at TLSSocket.socketOnData (_http_client.js:362:20)
+56 verbose stack     at emitOne (events.js:96:13)
+57 verbose cwd /Users/generalassembly/wdi/project3/16barsBackEnd
+58 error Darwin 16.1.0
+59 error argv "/usr/local/Cellar/node/7.4.0/bin/node" "/usr/local/bin/npm" "install"
+60 error node v7.4.0
+61 error npm  v4.0.5
+62 error fetch failed with status code 406
+63 error If you need help, you may report this error at:
+63 error     <https://github.com/npm/npm/issues>
+64 verbose exit [ 1, true ]

@@ -10,7 +10,7 @@ var PoemSchema = new mongoose.Schema(
 });
 
 mongoose.model('Poem', PoemSchema);
-mongoose.connect("mongodb://localhost/poemDb");
+mongoose.connect("mongodb://localhost/poemDB");
 module.exports = mongoose;
 // var seedData = require("./seed.json")
 // module.exports = {
