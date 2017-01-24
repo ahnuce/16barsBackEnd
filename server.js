@@ -21,5 +21,6 @@ app.post("/api/poems/", function(req,res){
 });
 //Show
 app.get("/api/poems/:id", function(req,res){
-  res.send(req.params.id);
+  var desiredPoem = req.params.id;
+  Poem.findById(desiredPoem).then(function(poemFromDB){res.json(poemFromDB)})
 });
