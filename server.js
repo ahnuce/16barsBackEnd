@@ -37,7 +37,7 @@ app.get("/api/poems/:id", function(req,res){
   });
 });
 //Delete
-app.post("/api/poems/:id/delete", function(req, res){
+app.delete("/api/poems/:id", function(req, res){
   Poem.findOneAndRemove({_id: req.params.id}).then(function(){
     res.redirect("/api/poems").catch(function(err){
       console.log(err);
@@ -45,8 +45,8 @@ app.post("/api/poems/:id/delete", function(req, res){
   });
 });
 //Edit
-app.post("/api/poems/:id/edit", function(req, res){
+app.put("/api/poems/:id", function(req, res){
   Poem.findOneAndUpdate({_id: req.params.id}, req.body.poem, {new: true}).then(function(editedPoem){
-    res.redirect("/api/poems/" + editedPoem.id);
+    res.redirect("/api/poems/" + req.params.id);
   });
 });
