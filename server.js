@@ -1,7 +1,11 @@
 var express = require('express');
 var app = express();
 var mongoose = require('./db/connection');
-var Poem = mongoose.model('Poem');
+var Poem = mongoose.model("Poem");
+var bodyParser = require("body-parser");
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 app.listen(3000, function(){
   console.log("I'm Aliveee");
@@ -10,13 +14,16 @@ app.listen(3000, function(){
 app.get("/api/poems/", function(req,res){
 Poem.find({})
   .then(function(poems){
-    res.send(poems)
+    res.json(poems)
   });
 });
 //New
 app.post("/api/poems/", function(req,res){
   Poem.create(req.body.poem).then(function(poem){
-    res.redirect("/poem/" + poem._id);
+    res.json(poem).catch(function(err){
+      console.log(err);
+    });
+    // res.redirect("/poem/" + poem._id);
   });
 });
 //Show
