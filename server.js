@@ -9,11 +9,9 @@ var bodyParser = require("body-parser");
 //passport-facebook
 var passport = require('passport'),
 FacebookStrategy = require('passport-facebook').Strategy;
-
 //Middleware Statements
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
 
 passport.use(new FacebookStrategy({
     clientID: 1443386915732607,
@@ -70,6 +68,8 @@ app.put("/api/poems/:id", function(req, res){
     res.redirect("/api/poems/" + req.params.id);
   });
 });
+
+
 
 // Redirect the user to Facebook for authentication.  When complete,
 // Facebook will redirect the user back to the application at
