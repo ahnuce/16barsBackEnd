@@ -3,7 +3,7 @@ var seedData = require('./seeds');
 var userSeedData = require('./userseeds');
 var Poem = mongoose.model('Poem');
 var User = mongoose.model('User');
-var passport = require('passport');
+
 //Poem Removal & seed
 Poem.remove({}).then(function(){
   Poem.collection.insert(seedData).then(function(){

@@ -5,11 +5,16 @@ var mongoose = require('./db/connection');
 var Poem = mongoose.model("Poem");
 // for parsing body - form
 var bodyParser = require("body-parser");
+//Passport
+var passport = require('passport'),
+OAuthStrategy = require('passport-oauth').OAuthStrategy;
 
 //Middleware Statements
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+
+//listen statment
 app.listen(3000, function(){
   console.log("I'm Aliveee");
 });

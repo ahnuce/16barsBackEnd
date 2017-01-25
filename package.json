@@ -24,7 +24,7 @@
     "method-override": "^2.3.7",
     "mongodb": "^2.2.21",
     "mongoose": "^4.7.7",
-    "passport-oauth": "^1.0.0",
+    "passport-facebook": "^2.1.1",
     "url": "https://github.com/ahnuce/16bars/issues"
   }
 }
