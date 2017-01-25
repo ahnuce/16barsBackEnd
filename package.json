@@ -24,6 +24,7 @@
     "method-override": "^2.3.7",
     "mongodb": "^2.2.21",
     "mongoose": "^4.7.7",
+    "passport": "^0.3.2",
     "url": "https://github.com/ahnuce/16bars/issues"
   }
 }
