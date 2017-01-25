@@ -17,5 +17,5 @@ var UserSchema = new mongoose.Schema(
 //test if branch will change
 mongoose.model('Poem', PoemSchema);
 mongoose.model('User', UserSchema);
-mongoose.connect("mongodb://localhost/poemDb");
+mongoose.connect("mongodb://localhost/sixteenBars");
 module.exports = mongoose;
