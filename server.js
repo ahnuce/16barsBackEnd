@@ -21,6 +21,7 @@ app.listen(3000, function(){
 app.get("/api/poems/", function(req,res){
 Poem.find({})
   .then(function(poems){
+    res.send(poems);
     res.json(poems);
   });
 });
