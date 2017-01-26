@@ -5,8 +5,12 @@ var mongoose = require('./db/connection');
 var Poem = mongoose.model("Poem");
 // for parsing body - form
 var bodyParser = require("body-parser");
+var cors = require('cors')
+
+
 
 //Middleware Statements
+app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 

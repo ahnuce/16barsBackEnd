@@ -20,6 +20,7 @@
   "homepage": "https://github.com/ahnuce/16barsBackEnd#readme",
   "dependencies": {
     "body-parser": "^1.16.0",
+    "cors": "^2.8.1",
     "express": "^4.14.0",
     "method-override": "^2.3.7",
     "mongodb": "^2.2.21",
