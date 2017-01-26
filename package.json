@@ -14,8 +14,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-  },
+  "bugs":{},
   "homepage": "https://github.com/ahnuce/16barsBackEnd#readme",
   "dependencies": {
     "body-parser": "^1.16.0",
@@ -23,6 +22,6 @@
     "express": "^4.14.0",
     "method-override": "^2.3.7",
     "mongodb": "^2.2.21",
-    "mongoose": "^4.7.7",
+    "mongoose": "^4.7.7"
   }
 }
