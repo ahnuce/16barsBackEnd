@@ -5,16 +5,15 @@ var mongoose = require('./db/connection');
 var Poem = mongoose.model("Poem");
 // for parsing body - form
 var bodyParser = require("body-parser");
-var cors = require('cors')
-var 
-
+var cors = require('cors');
+var port = process.env.PORT || 3000;
 
 //Middleware Statements
-app.use(cors())
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.listen(, function(){
+app.listen(port, function(){
   console.log("I'm Aliveee");
 });
 //Root/index/all Poems
