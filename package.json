@@ -14,8 +14,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-  },
+  "bugs":{},
   "homepage": "https://github.com/ahnuce/16barsBackEnd#readme",
   "dependencies": {
     "body-parser": "^1.16.0",
