@@ -51,7 +51,9 @@ app.delete("/api/poems/:id", function(req, res){
 });
 //Edit
 app.put("/api/poems/:id", function(req, res){
-  Poem.findOneAndUpdate({_id: req.params.id}, req.body.poem, {new: true}).then(function(editedPoem){
-    res.redirect("/api/poems/" + req.params.id);
+  console.log(req.body);
+  console.log(req.params.id);
+  Poem.findOneAndUpdate({_id: req.params.id}, req.body, {new: true}).then(function(editedPoem){
+
   });
 });
