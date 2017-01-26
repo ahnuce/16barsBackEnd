@@ -26,7 +26,8 @@ Poem.find({})
 });
 //New
 app.post("/api/poems/", function(req,res){
-  Poem.create(req.body.poem).then(function(poem){
+  console.log(req.body)
+  Poem.create(req.body).then(function(poem){
     res.json(poem).catch(function(err){
       console.log(err);
     });
