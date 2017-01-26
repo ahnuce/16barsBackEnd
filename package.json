@@ -15,7 +15,6 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ahnuce/16barsBackEnd/issues"
   },
   "homepage": "https://github.com/ahnuce/16barsBackEnd#readme",
   "dependencies": {
@@ -25,6 +24,5 @@
     "method-override": "^2.3.7",
     "mongodb": "^2.2.21",
     "mongoose": "^4.7.7",
-    "url": "https://github.com/ahnuce/16bars/issues"
   }
 }
