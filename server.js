@@ -44,9 +44,6 @@ app.get("/api/poems/:id", function(req,res){
 //Delete
 app.delete("/api/poems/:id", function(req, res){
   Poem.findOneAndRemove({_id: req.params.id}).then(function(){
-    res.redirect("/api/poems").catch(function(err){
-      console.log(err);
-    });
   });
 });
 //Edit
