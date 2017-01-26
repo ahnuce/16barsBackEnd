@@ -10,5 +10,5 @@ var PoemSchema = new mongoose.Schema(
 });
 
 mongoose.model('Poem', PoemSchema);
-mongoose.connect("mongodb://localhost/sixteenBars");
+mongoose.connect(process.env.MONGOLAB_URL);
 module.exports = mongoose;

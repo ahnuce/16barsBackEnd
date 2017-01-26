@@ -6,7 +6,7 @@ var Poem = mongoose.model("Poem");
 // for parsing body - form
 var bodyParser = require("body-parser");
 var cors = require('cors')
-
+var 
 
 
 //Middleware Statements
@@ -14,7 +14,7 @@ app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.listen(3000, function(){
+app.listen(, function(){
   console.log("I'm Aliveee");
 });
 //Root/index/all Poems
