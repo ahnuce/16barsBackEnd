@@ -14,7 +14,7 @@ You can make reqest to any of the routes below and get back either specific or m
 | PATH          |  METHOD | USE                    |
 | ------------- |:-------:| ----------------------:|
 | /api/poems/   | POST    | Posting a new Poem     |
-| /api/poems/   | GET     | Get all Poem           |
+| /api/poems/   | GET     | Get all Poems          |
 | /api/poems/:id| GET     | Shows individual Poem  |
 | /api/poems/:id| DELETE  | Deletes individual Poem|
 | /api/poems/:id| PUT     | Edits individual Poem  |
@@ -24,8 +24,9 @@ These routes are implented in the "addingPassportToBackend" branch but not yet i
 
 | PATH                   | METHOD | USE                     |
 | ---------------------- |:------:| -----------------------:|
-| /auth/facebook         | GET    | Passport-Facebook Auth  |
-| /auth/facebook/callback| GET    | Passport-Facebook Auth  |
+| /auth/facebook         | GET    | Passport-Facebook auth  |
+| /auth/facebook/callback| GET    | callback after auth     |
+
 ---
 
 ##Middleware/Technologies:
