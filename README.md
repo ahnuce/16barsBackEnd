@@ -19,6 +19,7 @@ You can make reqest to any of the routes below and get back either specific or m
 These routes are implented in the "addingPassportToBackend" branch but not yet implented into master
 
 | PATH                   | METHOD | USE                     |
+| ---------------------- |:------:| -----------------------:|
 | /auth/facebook         | GET    | Passport-Facebook Auth  |
 | /auth/facebook/callback| GET    | Passport-Facebook Auth  |
 ---
