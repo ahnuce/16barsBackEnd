@@ -2,7 +2,9 @@
 #Front-end repository
 [Project 3 FrontEnd](https://github.com/ahnuce/16barsFrontEnd)
 #Instructions:
-You can make reqest to any of the routes below and get back either specific or multiple JSON objects. The root url is sixteen-bars.herokuapp.com.
+You can make reqest to any of the routes below and get back either specific or multiple JSON objects.
+
+##The root url is sixteen-bars.herokuapp.com.
 
 ###For Example [Example API call](https://sixteen-bars.herokuapp.com/api/poems)
  a GET request to sixteen-bars.herokuapp.com/api/poems would return all JSON objects for poems.
