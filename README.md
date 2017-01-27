@@ -7,7 +7,7 @@ You can make reqest to any of the routes below and get back either specific or m
 ##The root url is sixteen-bars.herokuapp.com.
 
 ###For Example [Example API call](https://sixteen-bars.herokuapp.com/api/poems)
- a GET request to sixteen-bars.herokuapp.com/api/poems would return all JSON objects for poems.
+ a GET request to __sixteen-bars.herokuapp.com/api/poems__ would return all JSON objects for poems.
 
 ---
 #Routes:
@@ -36,6 +36,6 @@ These routes are implented in the "addingPassportToBackend" branch but not yet i
 
 ---
 
-#Known Issues:
+##Known Issues:
 
 1. Authentication with facebook via Passport is not functional.
