@@ -1,8 +1,8 @@
 #Sixteen Bars API
-The back contains our controller, roots, and API. We have a db directory with our connection and seed files. The front-end communications with our back-end to manipulate functionality on our API. 
+The back contains our controller, roots, and API. We have a db directory with our connection and seed files. The front-end communications with our back-end to manipulate functionality on our API. We also used Postman to make our Post method.
 
 #Instructions:
-You can make reqest to any of the routes below and get back either specific or multiple JSON objects.
+You can make request to any of the routes below and get back either specific or multiple JSON objects.
 
 ##The root url is sixteen-bars.herokuapp.com.
 
