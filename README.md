@@ -1,4 +1,6 @@
 #Sixteen Bars API
+#Front-end repository
+[Project 3 FrontEnd](https://github.com/ahnuce/16barsFrontEnd)
 #Instructions:
 You can make reqest to any of the routes below and get back either specific or multiple JSON objects. The root url is sixteen-bars.herokuapp.com.
 
