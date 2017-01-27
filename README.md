@@ -1,6 +1,6 @@
 #Sixteen Bars API
-#Front-end repository
-[Project 3 FrontEnd](https://github.com/ahnuce/16barsFrontEnd)
+The back contains our controller, routes, and API. 
+
 #Instructions:
 You can make reqest to any of the routes below and get back either specific or multiple JSON objects.
 
@@ -40,3 +40,7 @@ These routes are implented in the "addingPassportToBackend" branch but not yet i
 ##Known Issues:
 
 1. Authentication with facebook via Passport is not functional.
+
+
+#Front-end repository
+[Project 3 FrontEnd](https://github.com/ahnuce/16barsFrontEnd)
