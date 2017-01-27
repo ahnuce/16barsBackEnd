@@ -25,7 +25,7 @@ These routes are implented in the "addingPassportToBackend" branch but not yet i
 ---
 ##Middleware/Technologies:
 ###1. Passport-facebook
-  * For authentication via Facebook.
+  * For authentication via Facebook. *
 ###2. method-override
   * To give us access to restful methods(more than just GET AND POST).
 ###3. bodyParser
