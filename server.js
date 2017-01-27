@@ -13,10 +13,11 @@ FacebookStrategy = require('passport-facebook').Strategy;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+//Passport Middleware
 passport.use(new FacebookStrategy({
     clientID: 1443386915732607,
     clientSecret: "2b9c7d8122492852cc866569beaa07e4",
-    callbackURL: "http://www.google.com"
+    callbackURL: "localhost:3000/auth/facebook/callback"
   },
   function(accessToken, refreshToken, profile, done) {
     User.findOrCreate(User, function(err, user) {
@@ -25,7 +26,6 @@ passport.use(new FacebookStrategy({
     });
   }
 ));
-
 
 //listen statment
 app.listen(3000, function(){

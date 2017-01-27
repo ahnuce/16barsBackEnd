@@ -12,9 +12,10 @@ var PoemSchema = new mongoose.Schema(
 var UserSchema = new mongoose.Schema(
   {
     username:String,
-    password:String
+    password:String,
+    
   });
-//test if branch will change
+
 mongoose.model('Poem', PoemSchema);
 mongoose.model('User', UserSchema);
 mongoose.connect("mongodb://localhost/sixteenBars");
