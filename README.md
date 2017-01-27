@@ -24,14 +24,14 @@ These routes are implented in the "addingPassportToBackend" branch but not yet i
 | /auth/facebook/callback| GET    | Passport-Facebook Auth  |
 ---
 ##Middleware/Technologies:
-###1. Passport
-  * For authentication
+###1. Passport-facebook
+  * For authentication via Facebook.
 ###2. method-override
-  * To give us access to restful methods(more than just GET AND POST)
+  * To give us access to restful methods(more than just GET AND POST).
 ###3. bodyParser
-  * To allow the api to recieve form data
+  * To allow the api to recieve form data.
 ###4. Cors
-  * Resolved issue with the angualr front-end pulling data, Not comepletey sure of the extent of what it's doing
+  * Resolved issue with the angualr front-end pulling data, Not comepletey sure of the extent of what it's doing.
 ---
 
 #Known Issues:
