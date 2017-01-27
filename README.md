@@ -1,5 +1,5 @@
 #Sixteen Bars API
-The back contains our controller, routes, and API. 
+The back contains our controller, roots, and API. We have a db directory with our connection and seed files. The front-end communications with our back-end to manipulate functionality on our API. 
 
 #Instructions:
 You can make reqest to any of the routes below and get back either specific or multiple JSON objects.
@@ -40,6 +40,8 @@ These routes are implented in the "addingPassportToBackend" branch but not yet i
 ##Known Issues:
 
 1. Authentication with facebook via Passport is not functional.
+
+
 
 
 #Front-end repository
