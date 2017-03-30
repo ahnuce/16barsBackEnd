@@ -1,16 +1,16 @@
-#Sixteen Bars API
+# Sixteen Bars API
 The back contains our controller, roots, and API. We have a db directory with our connection and seed files. The front-end communications with our back-end to manipulate functionality on our API. We also used Postman to make our Post method.
 
-#Instructions:
+# Instructions:
 You can make request to any of the routes below and get back either specific or multiple JSON objects.
 
-##The root url is sixteen-bars.herokuapp.com.
+## The root url is sixteen-bars.herokuapp.com.
 
-###For Example [Example API call](https://sixteen-bars.herokuapp.com/api/poems)
+### For Example [Example API call](https://sixteen-bars.herokuapp.com/api/poems)
  a GET request to __sixteen-bars.herokuapp.com/api/poems__ would return all JSON objects for poems.
 
 ---
-#Routes:
+# Routes:
 | PATH          |  METHOD | USE                    |
 | ------------- |:-------:| ----------------------:|
 | /api/poems/   | POST    | Posting a new Poem     |
@@ -19,7 +19,7 @@ You can make request to any of the routes below and get back either specific or 
 | /api/poems/:id| DELETE  | Deletes individual Poem|
 | /api/poems/:id| PUT     | Edits individual Poem  |
 
-##WIP Routes:
+## WIP Routes:
 These routes are implented in the "addingPassportToBackend" branch but not yet implented into master
 
 | PATH                   | METHOD | USE                     |
@@ -29,7 +29,7 @@ These routes are implented in the "addingPassportToBackend" branch but not yet i
 
 ---
 
-##Middleware/Technologies:
+## Middleware/Technologies:
 1. Passport-facebook - For authentication via Facebook.
 2. Method-override - To give us access to restful methods(more than just GET AND POST).
 3. BodyParser - To allow the api to recieve form data.
@@ -37,7 +37,7 @@ These routes are implented in the "addingPassportToBackend" branch but not yet i
 
 ---
 
-##Known Issues:
+## Known Issues:
 
 1. Authentication with facebook via Passport is not functional.
 
